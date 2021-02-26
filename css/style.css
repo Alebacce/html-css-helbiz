@@ -65,6 +65,7 @@ menu.lang li:last-of-type {
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
+    position: relative;
 }
 
 .teaser {
@@ -100,6 +101,8 @@ menu.lang li:last-of-type {
 /*END HEADER*/
 
 /*MAIN*/
+
+/*first section: products*/
 #products {
     text-align: center;
     padding: 70px;
@@ -121,4 +124,88 @@ menu.lang li:last-of-type {
 
 .col_inner {
     padding: 20px;
+}
+
+.col_content {
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+/*second section: background only*/
+#background-only {
+    height: 400px;
+    background-image: url("../img/HelbizBanner.jpg");
+    background-size: cover;
+}
+
+#background-only img {
+    display: block;
+    margin: 0 auto;
+    max-height: 650px;
+    position: relative;
+    top: 100px;
+}
+
+/*third section: how to*/
+#how-to .container>[class*="col-"] {
+    position: relative;
+    height: 400px;
+}
+
+.how-to-text {
+    /* text-align: center; */
+    padding: 70px 0;
+    width: 38%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.how-to-text h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.how-to-text h4 {
+    font-weight: 500;
+}
+
+@media all and (max-width: 991px) {
+    #how-to .container>[class*="col-"] {
+        padding: 70px 0;
+        height: unset;
+    }
+
+    #how-to .container>[class*="col-"] .how-to-text {
+        text-align: center;
+        padding-top: 700px;
+    }
+}
+
+/*fourth section: slides*/
+#slides {
+    padding: 25px 0;
+}
+
+#slides .container [class*="col"] {
+    height: 500px;
+}
+
+#slides .container [class*="col_content"] {
+    height: 100%;
+}
+
+#slides .container>[class*="col-"]:first-child {
+    background-image: url("../img/ScooterHelbiz-2400.jpg");
+}
+
+#slides .container .wallpaper {
+    background-color: #324150;
+}
+
+#slides .container .city {
+    background-image: url("../img/cities-1500.jpg");
+    background-position: top;
+    background-size: cover;
 }
