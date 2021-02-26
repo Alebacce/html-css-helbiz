@@ -12,9 +12,17 @@ a {
     text-decoration: none;
 }
 
-/*NAV*/
+/*HEADER*/
+/*nav*/
 .nav-top {
     padding: 20px 0;
+}
+
+@media all and (max-width: 991px) {
+    .nav-top {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .nav-top nav {
@@ -77,4 +85,40 @@ menu.lang li:last-of-type {
 
 .teaser p {
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .teaser h1 {
+        font-size: 40px;
+    }
+
+    .teaser p {
+        font-size: 14px;
+    }
+}
+
+/*END HEADER*/
+
+/*MAIN*/
+#products {
+    text-align: center;
+    padding: 70px;
+}
+
+#products h3 {
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#products p {
+    padding-bottom: 15px;
+}
+
+#products .products-img img {
+    width: 100%;
+}
+
+.col_inner {
+    padding: 20px;
 }
