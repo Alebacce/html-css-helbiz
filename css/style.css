@@ -122,11 +122,11 @@ menu.lang li:last-of-type {
     width: 100%;
 }
 
-.col_inner {
+#product .col_inner {
     padding: 20px;
 }
 
-.col_content {
+#products .col_content {
     padding: 20px;
     background-color: #fafafa;
 }
@@ -185,7 +185,7 @@ menu.lang li:last-of-type {
 
 /*fourth section: slides*/
 #slides {
-    padding: 25px 0;
+    padding: 30px 0;
 }
 
 #slides .container [class*="col"] {
@@ -198,6 +198,7 @@ menu.lang li:last-of-type {
 
 #slides .container>[class*="col-"]:first-child {
     background-image: url("../img/ScooterHelbiz-2400.jpg");
+    background-size: cover;
 }
 
 #slides .container .wallpaper {
@@ -208,4 +209,16 @@ menu.lang li:last-of-type {
     background-image: url("../img/cities-1500.jpg");
     background-position: top;
     background-size: cover;
+}
+
+#slides .col_inner {
+    padding-top: 30px;
+}
+
+.padding-right-15 {
+    padding-right: 15px;
+}
+
+.padding-left-15 {
+    padding-left: 15px;
 }
