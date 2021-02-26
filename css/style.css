@@ -1,4 +1,8 @@
 /*COMMON*/
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif
+}
+
 .wrapper-small {
     max-width: 992px;
     margin: 0 auto;
@@ -9,11 +13,11 @@ a {
 }
 
 /*NAV*/
-header {
+.nav-top {
     padding: 20px 0;
 }
 
-header nav {
+.nav-top nav {
     text-align: right;
 }
 
@@ -46,4 +50,31 @@ menu.lang li:last-of-type {
     color: black;
     font-size: 25px;
     line-height: 21px;
+}
+
+.jumbotron {
+    background-image: url("../img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+.teaser {
+    text-align: center;
+    width: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.teaser h1 {
+    font-size: 50px;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+
+.teaser p {
+    padding-bottom: 20px;
 }
