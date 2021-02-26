@@ -1,0 +1,5 @@
+/*COMMON*/
+.wrapper-small {
+    max-width: 991px;
+    margin: 0 auto;
+}
