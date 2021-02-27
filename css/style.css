@@ -172,6 +172,10 @@ menu.lang li:last-of-type {
 }
 
 @media all and (max-width: 991px) {
+    #how-to {
+        padding-bottom: 350px;
+    }
+
     #how-to .container>[class*="col-"] {
         padding: 70px 0;
         height: unset;
@@ -189,7 +193,7 @@ menu.lang li:last-of-type {
 }
 
 #slides .container [class*="col"] {
-    height: 500px;
+    height: 465px;
 }
 
 #slides .container [class*="col_content"] {
@@ -201,8 +205,56 @@ menu.lang li:last-of-type {
     background-size: cover;
 }
 
-#slides .container .wallpaper {
+#slides .larger-slide {
+    position: relative;
+}
+
+#slides .larger-slide .slide-text {
+    font-size: 20px;
+
+    position: absolute;
+    width: 350px;
+    top: 116px;
+    left: 63%;
+}
+
+#slides .larger-slide .slide-text h2 {
+    font-size: 44px;
+    font-weight: 400;
+}
+
+@media all and (max-width: 991px) {
+    #slides .larger-slide {
+        position: static;
+    }
+
+    #slides .larger-slide .slide-text {
+        position: static;
+        padding-top: 116px;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width:471px) {
+    #slides .larger-slide .slide-text {
+        position: static;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #slides .larger-slide .slide-text h2 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    #slides .larger-slide .slide-text p {
+        padding: 25px 0 18px 0;
+    }
+}
+
+#slides .container .bg-blue {
     background-color: #324150;
+    overflow: hidden;
 }
 
 #slides .container .city {
@@ -221,4 +273,67 @@ menu.lang li:last-of-type {
 
 .padding-left-15 {
     padding-left: 15px;
+}
+
+@media all and (max-width: 991px) {
+    .padding-right-15 {
+        padding-right: 0px;
+    }
+
+    .padding-left-15 {
+        padding-left: 0px;
+    }
+}
+
+.slide-text {
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+}
+
+.slide-text h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.slide-text p {
+    padding: 25px 0;
+}
+
+.slide-text a {
+    color: white;
+}
+
+.slide-text ul {
+    list-style-type: none;
+}
+
+.slide-text ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#slides .inner-img {
+    width: 100%;
+    position: relative;
+    bottom: 7px;
+    left: 0;
+}
+
+#slides .inner-img img {
+    width: 100%;
+}
+
+@media all and (max-width: 471px) {
+    #slides .container .bg-blue {
+        position: relative;
+    }
+
+    #slides .inner-img {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        text-align: center;
+    }
 }
