@@ -146,6 +146,18 @@ menu.lang li:last-of-type {
     top: 100px;
 }
 
+@media all and (max-width: 471px) {
+    #background-only img {
+        max-height: 550px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    #background-only img {
+        max-height: 450px;
+    }
+}
+
 /*third section: how to*/
 #how-to .container>[class*="col-"] {
     position: relative;
@@ -184,6 +196,22 @@ menu.lang li:last-of-type {
     #how-to .container>[class*="col-"] .how-to-text {
         text-align: center;
         padding-top: 700px;
+    }
+}
+
+@media all and (max-width: 471px) {
+    #how-to .container>[class*="col-"] .how-to-text {
+        padding-top: 600px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    #how-to {
+        padding-bottom: 250px;
+    }
+
+    #how-to .container>[class*="col-"] .how-to-text {
+        padding-top: 400px;
     }
 }
 
