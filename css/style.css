@@ -146,6 +146,8 @@ menu.lang li:last-of-type {
     top: 100px;
 }
 
+/*riduco la grandezza dell'immagine del telefono per renderla interamente 
+visibile sugli schermi più piccoli*/
 @media all and (max-width: 471px) {
     #background-only img {
         max-height: 550px;
@@ -183,6 +185,7 @@ menu.lang li:last-of-type {
     font-weight: 500;
 }
 
+/*Cambio le spaziature per migliorare l'aspetto in responsive*/
 @media all and (max-width: 991px) {
     #how-to {
         padding-bottom: 350px;
@@ -251,6 +254,7 @@ menu.lang li:last-of-type {
     font-weight: 400;
 }
 
+/*Sistemo il testo nei vari dispositivi*/
 @media all and (max-width: 991px) {
     #slides .larger-slide {
         position: static;
@@ -303,6 +307,7 @@ menu.lang li:last-of-type {
     padding-left: 15px;
 }
 
+/*Levo il padding per far occupare totalmente la pagina alle colonne*/
 @media all and (max-width: 991px) {
     .padding-right-15 {
         padding-right: 0px;
@@ -352,6 +357,7 @@ menu.lang li:last-of-type {
     width: 100%;
 }
 
+/*Adatto l'immagine del telefono con l'app sugli schermi più piccoli*/
 @media all and (max-width: 471px) {
     #slides .container .bg-blue {
         position: relative;
@@ -400,4 +406,83 @@ menu.lang li:last-of-type {
 
 .social-banner ul li a {
     color: black;
+}
+
+/*END MAIN*/
+
+/*FOOTER*/
+.footer {
+    margin-top: 30px;
+    padding: 70px 0;
+    background-color: black;
+    color: white;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer h3 {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.footer .wrapper-small .container [class*="col-"]>.container {
+    padding-bottom: 40px;
+}
+
+.footer-link-menu ul li {
+    padding-bottom: 15px;
+}
+
+.footer-link-menu ul li a {
+    color: rgb(155, 154, 154);
+}
+
+.footer-social-and-legal {
+    padding: 50px 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.footer-social-and-legal li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-social-and-legal a {
+    color: white;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.footer-social-and-legal a i {
+    font-size: 20px;
+}
+
+.footer-app-download {
+    text-align: center;
+}
+
+@media all and (max-width: 767px) {
+    .footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-responsive-padding {
+        padding-top: 25px;
+    }
+
+    /*misure aggiustate per un padding corretto anche sugli
+    schermi più piccoli*/
+    .footer-social-and-legal {
+        padding-top: 20px;
+        padding-bottom: 120px;
+    }
+
+    .footer-social-and-legal li {
+        padding: 20px 0;
+        margin-right: 15px;
+    }
 }
