@@ -337,3 +337,39 @@ menu.lang li:last-of-type {
         text-align: center;
     }
 }
+
+/*fifth section: social*/
+.social-wallpaper {
+    background-image: url("../img/Social-Banner.jpg");
+    background-size: 1500px;
+    height: 300px;
+    position: relative;
+}
+
+.social-banner {
+    background-color: white;
+    padding: 40px 80px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-banner ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.social-banner ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-banner ul li:last-child {
+    margin-right: 0;
+}
+
+.social-banner ul li a {
+    color: black;
+}
